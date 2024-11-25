@@ -54,3 +54,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top <= window.innerHeight && rect.bottom >= 0;
+  }
+  
+  function handleScroll() {
+    const elements = document.querySelectorAll('.slide-up');
+    elements.forEach((el) => {
+      if (isInViewport(el)) {
+        el.classList.add('active');
+      }
+    });
+  }
+  
+  window.addEventListener('scroll', handleScroll);
+  
+  handleScroll();
+  
