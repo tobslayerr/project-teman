@@ -306,6 +306,7 @@ body::before {
 }
 
 .minimal-box p, .info-box p {
+    text-align: justify;
     font-size: 1rem;
     color: #666;
     margin-top: 10px;
@@ -347,6 +348,7 @@ body::before {
   }
   
   .poster-description p {
+    text-align: justify;
     line-height: 1.6;
     color: #555;
   }
@@ -393,6 +395,7 @@ body::before {
   }
   
   .infographic-description p {
+    text-align: justify;
     line-height: 1.6;
     color: #555;
   }
@@ -422,6 +425,7 @@ body::before {
 }
 
 #MOVIE .movie-container .movie-description p {
+    text-align: justify;
     margin-top: 10px; 
 }
 
